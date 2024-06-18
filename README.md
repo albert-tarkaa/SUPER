@@ -22,8 +22,8 @@ This project involves:
 
 ## Features
 
-- **Park Identification:** Locate parks within Leeds city.
-- **Event Information:** Know what’s happening in the parks.
-- **Accessibility:** Information on disability services.
-- **Nearby Amenities:** Find cafes and other amenities near parks.
-- **Environmental Data:** Access microclimate and air quality data.
+- **Park Identification:** Locate parks and green spaces within Leeds city.
+- **Event Information:** Know what’s happening in the parks and green spaces.
+- **Accessibility:** Information on disability services within the listed parks and green spaces.
+- **Nearby Amenities:** Find cafes and other amenities near the listed parks and green spaces.
+- **Environmental Data:** Access microclimate and air quality data for the listed parks and green spaces.
