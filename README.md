@@ -27,3 +27,18 @@ This project involves:
 - **Accessibility:** Information on disability services within the listed parks and green spaces.
 - **Nearby Amenities:** Find cafes and other amenities near the listed parks and green spaces.
 - **Environmental Data:** Access microclimate and air quality data for the listed parks and green spaces.
+
+
+## Get started
+
+1. Install dependencies
+
+   ```bash
+   npm install
+   ```
+
+2. Start the app
+
+   ```bash
+    npx expo start
+   ```
