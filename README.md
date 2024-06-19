@@ -2,7 +2,7 @@
 **SCHOOL OF BUILT ENVIRONMENT, ENGINEERING AND COMPUTING**
 
 
-## Small Urban Park Environments &amp; Residents (SUPER) Mobile Application Prototype
+## Small Urban Park Environments &amp; Residents (SUPER) Mobile Application Prototype for the Leeds Sustainability Institute (LSI)
 
 Submitted to Leeds Beckett University in partial fulfilment of the requirements for the degree of MSc Information and Technology 
 
