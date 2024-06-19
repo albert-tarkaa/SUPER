@@ -22,11 +22,26 @@ This project involves:
 
 ## Features
 
-- **Park Identification:** Locate parks and green spaces within Leeds city.
-- **Event Information:** Know what’s happening in the parks and green spaces.
-- **Accessibility:** Information on disability services within the listed parks and green spaces.
-- **Nearby Amenities:** Find cafes and other amenities near the listed parks and green spaces.
-- **Environmental Data:** Access microclimate and air quality data for the listed parks and green spaces.
+### Must-Have Features - These are the fundamental features the app must have to meet user expectations
+
+- Users can locate parks and green spaces within Leeds city. 
+- Directions on how to access the parks and green spaces on foot, by cycle and by bus.
+- Details about parks and green spaces facilities and accessibility, family and children friendliness including toilets, benches, bins, water fountains and sand areas.
+- Information on the events happening, and when parks and green spaces are open.
+- Access to microclimate and air quality data - Display of average and current air quality data, UV levels, and pollen count in the parks and green spaces.
+
+### Performance Features - These features will directly impact user satisfaction
+
+- Information about amenities near parks and green spaces and in the vicinity (cash machines, cafes, shops, car parks, secure bicycle parking).
+- Information on walking trails and what users can see along the way.
+- Information about plant and tree species as well as parks and green spaces initiatives e.g. no-mow May.
+- Art in the parks and green spaces - Historical and cultural references.
+- Display of all green and blue spaces users can walk to within 10 minutes.
+- Filters are available to show or hide a map of the parks and green spaces along with their various facilities.
+
+### Delight Features - These features will significantly enhance their overall experience
+ 
+- Informative and engaging messages about the benefits of parks and green spaces air quality, e.g., air quality comparisons between city square and Park square.
 
 
 ## Get started
