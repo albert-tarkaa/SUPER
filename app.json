@@ -31,6 +31,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "ae5c9e8f-250d-4de7-9b1d-5ab591ec1cf0"
+      }
+    },
+    "owner": "albert.tarkaa"
   }
 }
