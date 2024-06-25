@@ -43,6 +43,8 @@ const SignInScreen = () => {
           placeholder='Password'
         />
 
+        <Link to="/ForgotPasswordScreen" style={styles.signInText}>Forgot Password?</Link>
+
         <Button
           mode="contained"
           style={styles.createAccountButton}
@@ -65,7 +67,7 @@ const SignInScreen = () => {
 
         <View style={styles.signInContainer}>
           <Text style={styles.signInTextNormal}>Don't have an account? </Text>
-          <Link to="/signup" style={styles.signInText}>Sign Up</Link>
+          <Link to="/OnboardingScreen" style={styles.signInText}>Sign Up</Link>
       </View>
     </View>
     </View>
@@ -105,15 +107,9 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
   createAccountButton: {
-    marginTop: 15,
-    paddingVertical: 8,
+    marginTop: 25,
+    paddingVertical: 10,
     backgroundColor: 'green',
-    borderRadius: 40
-  },
-  skipButton: {
-    marginTop: 15,
-    paddingVertical: 8,
-    borderColor: 'green',
     borderRadius: 40
   },
   buttonLabel: {
