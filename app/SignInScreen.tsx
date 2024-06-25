@@ -10,7 +10,8 @@ const { width, height } = Dimensions.get('window');
 // Convert pixel values to percentages
 const IMAGE_WIDTH_PERCENTAGE = (80.29 / width) * 100;
 const IMAGE_HEIGHT_PERCENTAGE = (135.05 / height) * 100;
-const OnboardingScreen = () => {
+
+const SignInScreen = () => {
   const navigation = useNavigation();
   return (
     <View style={styles.container}>
@@ -19,8 +20,7 @@ const OnboardingScreen = () => {
           source={require('@/assets/images/icon.png')}
           style={styles.logo}
         />
-        <Text style={styles.title}>Welcome to SUPER!</Text>
-        <Text style={styles.subtitle}>Create an account to continue</Text>
+        <Text style={styles.title}>Sign In</Text>
 
         <TextInput
           // label="Email Address"
@@ -49,16 +49,7 @@ const OnboardingScreen = () => {
           labelStyle={styles.buttonLabel}
           onPress={() => navigation.navigate('LetsKnowYouScreen')}
         >
-          Create Account
-        </Button>
-
-        <Button
-          mode="outlined"
-          style={styles.skipButton}
-          labelStyle={[styles.buttonLabel, { color: Colors.light.textSecondary }]}
-          onPress={() => navigation.navigate('LetsKnowYouScreen')}
-        >
-          Skip
+          Sign In
         </Button>
 
         <Text style={styles.orText}>OR</Text>
@@ -73,12 +64,10 @@ const OnboardingScreen = () => {
         </Button>
 
         <View style={styles.signInContainer}>
-          <Text style={styles.signInTextNormal}>Already have an account? </Text>
-          <Text style={styles.signInText}>
-          <Link to="/SignInScreen">Sign In</Link>
-          </Text>
-        </View>
+          <Text style={styles.signInTextNormal}>Don't have an account? </Text>
+          <Link to="/signup" style={styles.signInText}>Sign Up</Link>
       </View>
+    </View>
     </View>
   );
 };
@@ -98,26 +87,18 @@ const styles = StyleSheet.create({
     height: `${IMAGE_HEIGHT_PERCENTAGE}%`, // Dynamic percentage height
     resizeMode: 'contain',
     alignSelf: 'center',
-    // marginBottom: 80,
+    marginBottom: 80,
     // marginTop: 10,
   },
   title: {
     fontSize: 32,
     fontWeight: 600,
     textAlign: 'left',
-    marginBottom: 4,
+    marginBottom: 20,
     width: '50%',
     lineHeight: 43.2,
     letterSpacing: -1,
-    color: '#001B3C',
-  },
-  subtitle: {
-    fontSize: 14,
-    textAlign: 'left',
-    marginBottom: 20,
-    fontWeight: 400,
-    lineHeight: 20,
-    color: '#909090'
+    color: '#001B3C'
   },
   input: {
     marginBottom: 20,
@@ -170,4 +151,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default OnboardingScreen;
+export default SignInScreen;
