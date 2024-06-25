@@ -2,15 +2,10 @@ import { Link } from 'expo-router';
 import React from 'react';
 import { View, StyleSheet, Image, Dimensions } from 'react-native';
 import { TextInput, Button, Text, useTheme } from 'react-native-paper';
-import { Colors } from 'react-native/Libraries/NewAppScreen';
+import { useNavigation } from '@react-navigation/native';
 
-const { width, height } = Dimensions.get('window');
-
-// Convert pixel values to percentages
-const IMAGE_WIDTH_PERCENTAGE = (80.29 / width) * 100;
-const IMAGE_HEIGHT_PERCENTAGE = (135.05 / height) * 100;
 const ForgotPasswordScreen = () => {
-
+const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <View style={styles.content}>
