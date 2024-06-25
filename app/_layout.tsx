@@ -31,13 +31,24 @@ export default function RootLayout() {
       <Stack>
         <Stack.Screen name="index" options={{ headerShown: false }} />
         <Stack.Screen name="OnboardingScreen" options={{ headerShown: false }} />
-        <Stack.Screen name="SignInScreen" options={{ headerShown: false }} />
+        <Stack.Screen name="SignInScreen" options={{
+          headerShown: false,
+          headerTitle: '',
+          headerBackTitleVisible: false,
+          headerTransparent: true,
+         }} />
         <Stack.Screen name="LetsKnowYouScreen" options={{
             headerTitle: '',
             headerBackTitleVisible: false,
             headerTransparent: true,
         }}
         />
+        <Stack.Screen name="ForgotPasswordScreen" options={{
+            headerTitle: '',
+            headerBackTitleVisible: false,
+            headerTransparent: true,
+        }} />
+        
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />
       </Stack>
