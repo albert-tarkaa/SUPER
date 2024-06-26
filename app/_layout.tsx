@@ -53,6 +53,7 @@ export default function RootLayout() {
             headerBackTitleVisible: false,
             headerTransparent: true,
         }} />
+        {/* <Stack.Screen name="HomeScreen" options={{ headerShown: false }} /> */}
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />
       </Stack>
