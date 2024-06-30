@@ -20,6 +20,18 @@ This project involves:
 - Designing and developing a prototype app.
 - Utilizing OpenStreetMap data or Mapbox for park information.
 
+## Architecture
+
+The architecture of the app is as follows:
+
+![Architecture Diagram](AD.png)
+
+### Components
+
+- **Mobile App**: Built with React Native for both iOS and Android platforms.
+- **Backend Services**: Developed using Spring Boot.
+- **Database**: PostgreSQL is used for data storage.
+
 ## Features
 
 ### Must-Have Features - These are the fundamental features the app must have to meet user expectations
