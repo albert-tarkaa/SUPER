@@ -56,7 +56,7 @@ const OnboardingScreen = () => {
           mode="outlined"
           style={styles.skipButton}
           labelStyle={[styles.buttonLabel, { color: Colors.light.textSecondary }]}
-          onPress={() => navigation.navigate('LetsKnowYouScreen')}
+          onPress={() => navigation.navigate('(tabs)')}
         >
           Skip
         </Button>
@@ -67,7 +67,7 @@ const OnboardingScreen = () => {
           mode="outlined"
           style={styles.googleButton}
           labelStyle={styles.googleButtonLabel}
-          onPress={() => navigation.navigate('LetsKnowYouScreen')}
+          onPress={() => navigation.navigatenavigate('(tabs)')}
         >
           Continue with Google
         </Button>

@@ -51,7 +51,7 @@ const LetsKnowYouScreen = () => {
           mode="contained"
           style={styles.createAccountButton}
           labelStyle={styles.buttonLabel}
-          onPress={() => navigation.navigate('LetsKnowYouScreen')}
+          onPress={() => navigation.navigate('(tabs)')}
         >
           Complete
         </Button>

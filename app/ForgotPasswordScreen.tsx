@@ -26,7 +26,7 @@ const navigation = useNavigation();
           mode="contained"
           style={styles.createAccountButton}
           labelStyle={styles.buttonLabel}
-          onPress={() => navigation.navigate('LetsKnowYouScreen')}
+          onPress={() => navigation.navigate('ResetPasswordScreen')}
         >
           Send Recovery Link
         </Button>
