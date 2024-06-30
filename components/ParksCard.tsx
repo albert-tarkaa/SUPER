@@ -1,8 +1,11 @@
 import { Text, Card, Title, Paragraph, Icon } from 'react-native-paper';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, TouchableOpacity } from 'react-native';
 
-const ParksCard = ({ name, address, image, rating, distance }: { name: string, address: string, image: string, rating: string, distance: string }) => (
 
+const ParksCard = ({ name, address, image, rating, distance, onPress }: { name: string, address: string, image: string, rating: string, distance: string, onPress:any }) =>
+
+(
+  <TouchableOpacity onPress={onPress}>
   <Card style={styles.card}>
     <Card.Cover source={image} />
     <View style={styles.ratingContainer}>
@@ -17,7 +20,8 @@ const ParksCard = ({ name, address, image, rating, distance }: { name: string, a
       <Title style={styles.title}>{name}</Title>
       <Paragraph>{address}</Paragraph>
     </Card.Content>
-  </Card>
+    </Card>
+    </TouchableOpacity>
 );
 
 const styles = StyleSheet.create({

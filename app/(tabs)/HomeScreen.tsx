@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, ScrollView, Image, StyleSheet } from 'react-native';
-import { Appbar, Avatar, Text, Searchbar, IconButton,Icon } from 'react-native-paper';
+import { Appbar, Avatar, Text, Searchbar, IconButton, Icon } from 'react-native-paper';
+import { useNavigation } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import ParksCard from '@/components/ParksCard';
 import CustomAvatar from '@/components/CustomAvatar';
@@ -12,9 +13,14 @@ const PackSquare = require('@/assets/images/2.png');
 const RoundhayPark = require('@/assets/images/3.png');
 
 const HomeScreen = () => {
+    const navigation = useNavigation();
     const [searchQuery, setSearchQuery] = React.useState('');
 
     const onChangeSearch = query => setSearchQuery(query);
+
+    const handleParkPress = (parkDetails: { name: string, address: string, image: any, rating: string, distance: string }) => {
+        navigation.navigate('ParkDetailsScreen', { parkDetails});
+    };
 
     return (
         <SafeAreaView style={styles.container}>
@@ -47,7 +53,14 @@ const HomeScreen = () => {
                     address="Stanningley Rd, Armley, Leeds LS12 3LW"
                     image={MeadowLane}
                     rating="4.5"
-                    distance="1.1"
+                        distance="1.1"
+                        onPress={() => handleParkPress({
+                            name: "Park Square",
+                            address: "Stanningley Rd, Armley, Leeds LS12 3LW",
+                            image: MeadowLane,
+                            rating: "4.5",
+                            distance: "1.1"
+                        })}
                 />
 
                 <ParksCard
@@ -55,7 +68,14 @@ const HomeScreen = () => {
                     address="Armley Ridge Rd, Leeds LS12 2QX"
                     image={PackSquare}
                     rating="3.5"
-                    distance="1.1"
+                        distance="1.1"
+                        onPress={() => handleParkPress({
+                            name: "Meadow Lane",
+                            address: "Armley Ridge Rd, Leeds LS12 2QX",
+                            image: MeadowLane,
+                            rating: "4.5",
+                            distance: "1.1"
+                        })}
                 />
 
                 <ParksCard
@@ -63,7 +83,14 @@ const HomeScreen = () => {
                     address="Mansion Ln, Roundhay, Leeds LS8 2HH"
                     image={RoundhayPark}
                     rating="4.5"
-                    distance="1.1"
+                        distance="1.1"
+                        onPress={() => handleParkPress({
+                            name: "Roundhay Park",
+                            address: "Gboko, Benue State, Nigeria",
+                            image: MeadowLane,
+                            rating: "4.5",
+                            distance: "1.1"
+                        })}
                     />
                 </View>
             </ScrollView>
